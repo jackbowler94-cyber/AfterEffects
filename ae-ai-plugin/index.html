@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AE AI Assistant</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <header class="panel__header">
+        <h1>AE AI Assistant</h1>
+        <p>Describe the change you want to make to the selected layer.</p>
+      </header>
+
+      <section class="panel__input">
+        <label for="prompt">Prompt</label>
+        <textarea id="prompt" rows="6" placeholder="e.g., increase highlights and shadows, add a gaussian blur"></textarea>
+        <div class="panel__actions">
+          <button id="run" type="button">Run</button>
+          <button id="clear" type="button" class="secondary">Clear</button>
+        </div>
+      </section>
+
+      <section class="panel__log">
+        <h2>Log</h2>
+        <pre id="log">Ready.</pre>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,81 @@
+:root {
+  color-scheme: dark;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+  background: #1d1f23;
+  color: #f1f1f1;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+}
+
+.panel__header h1 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.panel__header p {
+  margin: 0;
+  color: #c2c6cc;
+}
+
+.panel__input label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #343844;
+  background: #101216;
+  color: #f1f1f1;
+  resize: vertical;
+}
+
+.panel__actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #343844;
+  background: #2b6df6;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #2a2d34;
+}
+
+.panel__log h2 {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: #c2c6cc;
+}
+
+#log {
+  margin: 0;
+  padding: 10px;
+  border-radius: 8px;
+  background: #101216;
+  border: 1px solid #343844;
+  min-height: 120px;
+  white-space: pre-wrap;
+}
